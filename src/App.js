@@ -19,8 +19,8 @@ const currentUsers = data.slice(indexOffFirstUser,indexOffLastUser);
   return (
     <div className="App">
       <Header from={indexOffFirstUser+1} to ={indexOffFirstUser+currentUsers.length}/>
-      <Main/>
-      <Button/>
+      {currentUsers.map((item)=> <Main key ={item.id}{...item}/>)}
+      <Button total={Math.ceil(data.length / userPerPage)} page={page} setPage={setPage}/>
     </div>
   );
 }

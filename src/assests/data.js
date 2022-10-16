@@ -2,7 +2,7 @@ const data = [
     {
       id: 'NaNNA463undefined',
       name: 'Väinö Perko',
-      age: 21,
+      age: 58,
       image: 'https://randomuser.me/api/portraits/men/13.jpg',
       email: 'vaino.perko@example.com',
     },
